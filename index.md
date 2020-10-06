@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <meta user-scalable=0 name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no">
 
 <div class="" style="width:512px;margin:auto">
