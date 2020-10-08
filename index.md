@@ -1,7 +1,7 @@
 <meta user-scalable=0 name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=no">
 <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
 
-<body style="background-image:url("/img/mp-background-tile.jpg")">
+<body style="background-image:url('/img/mp-background-tile.jpg')">
 <div class="" style="width:512px;margin:auto">
     <div id="canvases" class="" style="-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;">
       <canvas id="ctx" width="512px" height="741px" style="border:1px solid black"></canvas>
