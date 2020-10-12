@@ -16,32 +16,47 @@ draw = function (deck){
     while (blacklist.includes(n)) {
       n = Math.floor(Math.random() * 54) + 1;
     };
-    blacklist.push(n);
-    left1--
+  blacklist.push(n);
+  left1--
   }else if (deck == 2 && left2 !== 0) {
     n = Math.floor(Math.random() * 54) + 55;
     while (blacklist.includes(n)) {
       n = Math.floor(Math.random() * 54) + 55;
     };
-    blacklist.push(n);
-    left2--
+  blacklist.push(n);
+  left2--
   }else if (deck == 3 && left3 !== 0) {
     n = Math.floor(Math.random() * 54) + 109;
     while (blacklist.includes(n)) {
       n = Math.floor(Math.random() * 54) + 109;
     };
-    blacklist.push(n);
-    left3--
+  blacklist.push(n);
+  left3--
   }else if (deck == 4 && left4 !== 0) {
     n = Math.floor(Math.random() * 54) + 163;
     while (blacklist.includes(n)) {
       n = Math.floor(Math.random() * 54) + 163;
     };
-    blacklist.push(n);
+  blacklist.push(n);
+  left4--
+  }else if (deck == 0 && left !== 0) {
+    n = Math.floor(Math.random() * 216) + 1;
+    while (blacklist.includes(n)) {
+      n = Math.floor(Math.random() * 216) + 1;
+    };
+  blacklist.push(n);
+  if (n < 55 && n  > 0) {
+    left1--
+  }else if (n < 110 && > 54) {
+    left2--
+  }else if (n < 164 && > 109) {
+    left3--
+  }else if (n < 217 && > 163) {
     left4--
   }else {
     n = 0;
-  }
+    }
+    };
   ctx.drawImage(card, 0, 0,512,741);
   card.src = `img/${n}.png`;
 };
@@ -57,4 +72,7 @@ happyhour.onclick =  function(e){
 };
 ontherocks.onclick =  function(e){
   draw(4)
+};
+random.onclick =  function(e){
+  draw(0)
 };
