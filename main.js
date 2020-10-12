@@ -12,6 +12,7 @@ card.onload = function (){
 };
 card.src = `img/0.png`;
 draw = function (deck){
+  left =  left1 + left2 + left3 + left4;
   if (deck == 1 && left1 !== 0) {
     n = Math.floor(Math.random() * 54) + 1;
     while (blacklist.includes(n)) {
