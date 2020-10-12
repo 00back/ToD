@@ -48,11 +48,11 @@ draw = function (deck){
   blacklist.push(n);
   if (n < 55 && n  > 0) {
     left1--
-  }else if (n < 110 && > 54) {
+  }else if (n < 110 && n > 54) {
     left2--
-  }else if (n < 164 && > 109) {
+  }else if (n < 164 && n > 109) {
     left3--
-  }else if (n < 217 && > 163) {
+  }else if (n < 217 && n > 163) {
     left4--
   }else {
     n = 0;
