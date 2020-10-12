@@ -4,6 +4,7 @@ var left1 = 54;
 var left2 = 54;
 var left3 = 54;
 var left4 = 54;
+var left =  left1 + left2 + left3 + left4
 var blacklist = [];
 var ctx = document.getElementById('ctx').getContext("2d");
 card.onload = function (){
