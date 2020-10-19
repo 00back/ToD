@@ -76,5 +76,5 @@ ontherocks.onclick =  function(e){
   draw(4)
 };
 random.onclick =  function(e){
-  draw(0)
+  draw(Math.floor(Math.random()* 4) + 1);
 };
